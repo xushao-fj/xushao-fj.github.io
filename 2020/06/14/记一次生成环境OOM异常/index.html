@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19403663-fc05231d61649bd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19403663-bb70311500ec2a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2020-06-14T07:19:37.000Z">
-<meta property="article:modified_time" content="2020-06-14T09:30:41.937Z">
+<meta property="article:modified_time" content="2020-06-14T15:28:18.042Z">
 <meta property="article:author" content="xushao-fj">
 <meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
@@ -220,6 +220,8 @@
 <li>2020-05-23 17:00<br>重启短信服务后短信服务再次发生<code>OOM</code>异常  </li>
 </ul>
 <p>短信服务发送OOM异常, 通过在jvm启动参数设置:<br>设置发生OOM异常时自动dump出内存镜像<br><code>-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/weblog/sms/heapdump.hprof</code><br>设置发送OOM异常时企业微信通知<br>`-XX:OnOutOfMemoryError=curl <a href="https://xxx.com/notify/jvmError?n=sms-service" target="_blank" rel="noopener">https://xxx.com/notify/jvmError?n=sms-service</a><br>通过企业微信群通知得到短信服务OOM  </p>
+<a id="more"></a>
+
 <h3 id="问题定位"><a href="#问题定位" class="headerlink" title="问题定位"></a>问题定位</h3><ol>
 <li>内存溢出时服务器用户进程数满了, 可以推测出内存溢出时的线程数很高  </li>
 <li>通过mat分析dump文件, 发现一个xxl定时任务线程内存占用很大<br><img src="https://upload-images.jianshu.io/upload_images/19403663-fc05231d61649bd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
