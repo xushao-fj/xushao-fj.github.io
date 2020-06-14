@@ -6,23 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>记一次生成环境OOM异常 | xsm.blog</title>
+  <title>Category: 设计模式 | xsm.blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="事故背景 2020-05-23 16:00短信服务发生OOM异常 2020-05-23 17:00重启短信服务后短信服务再次发生OOM异常    短信服务发送OOM异常, 通过在jvm启动参数设置:设置发生OOM异常时自动dump出内存镜像-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath&#x3D;&#x2F;data&#x2F;weblog&#x2F;sms&#x2F;heapdump.hprof">
-<meta property="og:type" content="article">
-<meta property="og:title" content="记一次生成环境OOM异常">
-<meta property="og:url" content="http://yoursite.com/2020/06/14/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E7%8E%AF%E5%A2%83OOM%E5%BC%82%E5%B8%B8/index.html">
+  <meta name="description" content="java开发程序猿。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="xsm.blog">
+<meta property="og:url" content="http://yoursite.com/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="xsm.blog">
-<meta property="og:description" content="事故背景 2020-05-23 16:00短信服务发生OOM异常 2020-05-23 17:00重启短信服务后短信服务再次发生OOM异常    短信服务发送OOM异常, 通过在jvm启动参数设置:设置发生OOM异常时自动dump出内存镜像-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath&#x3D;&#x2F;data&#x2F;weblog&#x2F;sms&#x2F;heapdump.hprof">
+<meta property="og:description" content="java开发程序猿。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19403663-fc05231d61649bd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/19403663-bb70311500ec2a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="article:published_time" content="2020-06-14T07:19:37.000Z">
-<meta property="article:modified_time" content="2020-06-14T09:30:41.937Z">
 <meta property="article:author" content="xushao-fj">
-<meta property="article:tag" content="Java">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/19403663-fc05231d61649bd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="xsm.blog" type="application/atom+xml">
   
@@ -164,90 +158,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-记一次生成环境OOM异常" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      记一次生成环境OOM异常
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/06/14/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/" class="archive-article-date">
+  	<time datetime="2020-06-14T13:39:01.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-14</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/06/14/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/">观察者模式</a>
     </h1>
   
 
-        
-        <a href="/2020/06/14/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E7%8E%AF%E5%A2%83OOM%E5%BC%82%E5%B8%B8/" class="archive-article-date">
-  	<time datetime="2020-06-14T07:19:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-14</time>
-</a>
+        <div class="article-info info-on-right">
           
-            <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  字数统计: </span>
-        <!--这里样式可以自己定制-->
-        <span class="post-count" style="font-size: 16px;color: grey">803字</span>
-      </span>
-    </span>
-
-  <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text" style="font-size: 16px;color: grey">  阅读时长: </span>
-        <span class="post-count" style="font-size: 16px;color: grey">3分</span>
-      </span>
-    </span>
-</div>
-
-          
-
-        
-      </header>
-    
-
-
-      <!-- 目录内容 -->
-      
-      <!-- 目录内容结束 -->
-
-
-
-      <div class="article-entry" itemprop="articleBody" >
-      
-        <h3 id="事故背景"><a href="#事故背景" class="headerlink" title="事故背景"></a>事故背景</h3><ul>
-<li>2020-05-23 16:00<br>短信服务发生<code>OOM</code>异常</li>
-<li>2020-05-23 17:00<br>重启短信服务后短信服务再次发生<code>OOM</code>异常  </li>
-</ul>
-<p>短信服务发送OOM异常, 通过在jvm启动参数设置:<br>设置发生OOM异常时自动dump出内存镜像<br><code>-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/data/weblog/sms/heapdump.hprof</code><br>设置发送OOM异常时企业微信通知<br>`-XX:OnOutOfMemoryError=curl <a href="https://xxx.com/notify/jvmError?n=sms-service" target="_blank" rel="noopener">https://xxx.com/notify/jvmError?n=sms-service</a><br>通过企业微信群通知得到短信服务OOM  </p>
-<h3 id="问题定位"><a href="#问题定位" class="headerlink" title="问题定位"></a>问题定位</h3><ol>
-<li>内存溢出时服务器用户进程数满了, 可以推测出内存溢出时的线程数很高  </li>
-<li>通过mat分析dump文件, 发现一个xxl定时任务线程内存占用很大<br><img src="https://upload-images.jianshu.io/upload_images/19403663-fc05231d61649bd7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></li>
-</ol>
-<p>通过查看调用堆栈信息发现创建了很多的okHttp对象, 同时定位到业务代码:  <code>SmsRecordService#syncCost</code><br>该方法用于定时同步未接受到短信回调状态的短信记录<br><img src="https://upload-images.jianshu.io/upload_images/19403663-bb70311500ec2a05.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>3. 关键业务代码检查  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取所有未同步价格的短信 </span></span><br><span class="line">List&lt;SmsRecordCost&gt; smsRecordCosts = (List&lt;SmsRecordCost&gt;) JsonUtil.stringToObjList(response.body().string(), SmsRecordCost<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">smsRecordCosts.forEach(smsRecordCost -&gt; &#123;</span><br><span class="line">       SmsRecord smsRecord = <span class="keyword">this</span>.selectByPhone(smsRecordCost.getSmsBusinessKey(), smsRecordCost.getPhone());</span><br><span class="line">       log.info(<span class="string">"同步价格短信服务参数&#123;&#125;"</span>,smsRecord);</span><br><span class="line">       <span class="keyword">try</span> &#123;</span><br><span class="line">           <span class="keyword">int</span> i = smsRecord.getCost().compareTo(BigDecimal.ZERO);</span><br><span class="line">           <span class="comment">// 如果短信服务有价格,而海川没有价格,那就同步</span></span><br><span class="line">           <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</span><br><span class="line">               <span class="comment">// 循环创建OkHttpClient对象</span></span><br><span class="line">               OkHttpClient client1 = <span class="keyword">new</span> OkHttpClient().newBuilder().connectTimeout(<span class="number">10</span>, TimeUnit.SECONDS)</span><br><span class="line">                               .readTimeout(<span class="number">20</span>, TimeUnit.SECONDS)</span><br><span class="line">                               .build();</span><br><span class="line">               map.put(<span class="string">"id"</span>,smsRecordCost.getId().toString());</span><br><span class="line">               map.put(<span class="string">"cost"</span>,smsRecord.getCost().toString());</span><br><span class="line">               String jsonStr1 = JsonUtil.mapToString(map);</span><br><span class="line">               RequestBody requestBody1=RequestBody.create(MEDIA_TYPE_JSON,jsonStr1);</span><br><span class="line">               Request request1 = <span class="keyword">new</span> Request.Builder()</span><br><span class="line">                               .url(haichuanSmsConfig.getUpdateUrl())</span><br><span class="line">                               .post(requestBody1)</span><br><span class="line">                               .build();</span><br><span class="line">               client1.newCall(request1).execute();</span><br><span class="line">                   &#125;</span><br><span class="line">           &#125;</span><br><span class="line">       <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                   log.info(<span class="string">"同步失败&#123;&#125;,同步失败&#123;&#125;,异常信息&#123;&#125;"</span>, smsRecordCost, smsRecord,e);</span><br><span class="line">           &#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>发现在循环中创建<code>OkHttpClient</code>, 如果查询得到未同步的短信数量在1000左右, 那么就会创建1000个<code>OkHttpClient</code>对象, 而<code>OkHttpClient</code>在创建时会默认初始化核心线程数为5的线程池,那么就会创建四五千个线程, 导致栈溢出, 这也就印证了在发生<code>OOM</code>时, 运维说了服务器用户进程数满了.  </p>
-<h3 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h3><ol>
-<li><p>将创建<code>OkHttpClient</code>抽离成单例对象  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> OkHttpClient httpClient = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> OkHttpClient <span class="title">getOkHttpClient</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(httpClient != <span class="keyword">null</span>)&#123;</span><br><span class="line">        <span class="keyword">return</span> httpClient;</span><br><span class="line">    &#125;</span><br><span class="line">    ConnectionPool connectionPool = <span class="keyword">new</span> ConnectionPool(<span class="number">50</span>, <span class="number">5L</span>, TimeUnit.MINUTES);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> OkHttpClient().newBuilder().connectTimeout(<span class="number">10</span>, TimeUnit.SECONDS)</span><br><span class="line">                .readTimeout(<span class="number">20</span>, TimeUnit.SECONDS).connectionPool(connectionPool).build();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>因为该方法有定时任务定时调度, 同一时刻只可能有一个线程请求调用, 所以不需要考虑并发条件时单例<code>OkHttpClient</code>对象创建问题.  </p>
-</li>
-<li><p>重构方法调用  </p>
-</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">syncCost</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 先获取OkHttpClient 对象</span></span><br><span class="line">            OkHttpClient client = getOkHttpClient();</span><br><span class="line">            <span class="comment">// 略去其他操作...</span></span><br><span class="line">            smsRecordCosts.forEach(smsRecordCost -&gt; &#123;</span><br><span class="line">                SmsRecord smsRecord = <span class="keyword">this</span>.selectByPhone(smsRecordCost.getSmsBusinessKey(), smsRecordCost.getPhone());</span><br><span class="line">                log.info(<span class="string">"同步价格短信服务参数&#123;&#125;"</span>,smsRecord);</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="keyword">int</span> i = smsRecord.getCost().compareTo(BigDecimal.ZERO);</span><br><span class="line">                    <span class="comment">//如果短信服务有价格,而海川没有价格,那就同步</span></span><br><span class="line">                    <span class="keyword">if</span> (i == <span class="number">1</span>) &#123;</span><br><span class="line">                        map.put(<span class="string">"id"</span>,smsRecordCost.getId().toString());</span><br><span class="line">                        map.put(<span class="string">"cost"</span>,smsRecord.getCost().toString());</span><br><span class="line">                        String jsonStr1 = JsonUtil.mapToString(map);</span><br><span class="line">                        RequestBody requestBody1=RequestBody.create(MEDIA_TYPE_JSON,jsonStr1);</span><br><span class="line">                        Request request1 = <span class="keyword">new</span> Request.Builder()</span><br><span class="line">                                .url(haichuanSmsConfig.getUpdateUrl())</span><br><span class="line">                                .post(requestBody1)</span><br><span class="line">                                .build();</span><br><span class="line">                        client.newCall(request1).execute();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    log.info(<span class="string">"同步失败&#123;&#125;,同步失败&#123;&#125;,异常信息&#123;&#125;"</span>, smsRecordCost, smsRecord,e);</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            log.error(<span class="string">"同步失败&#123;&#125;"</span>,e);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-      
-
-      
-
-        
-
-
-
-    </div>
-    <div class="article-info article-info-index">
-      
-      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -259,177 +199,30 @@
 		</ul>
 	</div>
 
-      
+          
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
+        			<a href="/categories/设计模式//" class="article-tag-list-link color5">设计模式</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/14/%E8%AE%B0%E4%B8%80%E6%AC%A1%E7%94%9F%E6%88%90%E7%8E%AF%E5%A2%83OOM%E5%BC%82%E5%B8%B8/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2020/06/14/Java%E7%BA%BF%E7%A8%8B%E6%B1%A0%E5%8E%9F%E7%90%86/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Java线程池原理
-        
-      </div>
-    </a>
   
   
-    <a href="/2020/06/14/Java%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%E5%A4%84%E7%90%86%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%9F%A5%E8%AF%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Java函数式接口处理多线程查询</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-<span id="busuanzi_container_page_pv">
-        本文阅读量: <span id="busuanzi_value_page_pv"></span>次
- </span>
-
-
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#事故背景"><span class="toc-number">1.</span> <span class="toc-text">事故背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题定位"><span class="toc-number">2.</span> <span class="toc-text">问题定位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#问题解决"><span class="toc-number">3.</span> <span class="toc-text">问题解决</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment"></div>
-<script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
-<script src='//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
-<script>
-  var notify = 'false' == true ? true : false;
-  var verify = 'false' == true ? true : false;
-  new Valine({
-    av: AV,
-    el: '#vcomment',
-    notify: notify,
-    verify: verify,
-    app_id: "iTpfy5LNUO9fAmTzrehl62cc-gzGzoHsz",
-    app_key: "HFRLCuGidseOQAgcgavLvGcz",
-    placeholder: "老司机来一发吧~~",
-    avatar: "mm",
-    avatar_cdn: "",
-    pageSize: "10"
-  });
-</script>
-
-  </section>
-
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-
-
-
+    
 
 
           </div>
@@ -458,10 +251,10 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
-		isCategory: false,
+		isCategory: true,
 		open_in_new: false,
 		toc_hide_index: true,
 		root: "/",
